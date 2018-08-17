@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <template id="custom_snippet_tabs" inherit_id="website.snippets">
+            <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+
+                <div class="oe_snippet ui-draggable">
+                    <!-- Snippet Name -->
+                    <div class="oe_snippet_thumbnail ui-draggable-handle">
+                        <div class="oe_snippet_thumbnail_img" style="background-image: url(&quot;/website_tabs/static/src/img/thumbnail.png&quot;);"></div>
+                        <span class="oe_snippet_thumbnail_title">Collapse</span>
+                    </div>
+
+                    <!-- Snippet Body -->
+                    <section class="oe_snippet_body csb mt16 mb16">
+                        <div class="container">
+                            <h2 class="page-header">Collapse                               <small>v7</small>
+                            </h2>
+                            <div class="panel-group" role="tablist">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" data-toggle="collapse">
+                                        <h4 class="panel-title">
+                                        item1
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                             <p class="o_default_snippet_text">content1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" data-toggle="collapse">
+                                        <h4 class="panel-title">
+                                        item2
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                             <p class="o_default_snippet_text">content2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" data-toggle="collapse">
+                                        <h4 class="panel-title">
+                                        item3
+                                        </h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                             <p class="o_default_snippet_text">conten3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </xpath>
+        </template>
+
+        <!-- Add tabs option -->
+        <template id="snippet_testimonial_options" inherit_id="website.snippet_options">
+            <xpath expr="." position="inside">
+                <div data-js="snippet_testimonial_options" data-snippet-option-id="snippet_testimonial_options" data-selector=".csb">
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="js_add" data-_add_new_tabs="true">增加區塊</a>
+                    </li>
+                    <li>
+                        <a href="#" class="js_remove" data-_remove_current_tabs="true">減少區塊</a>
+                    </li>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
+     
+     
+  

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="custom_snippet_tabs" inherit_id="website.snippets">
+            <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+
+                <div class="oe_snippet ui-draggable">
+                    <!-- Snippet Name -->
+                    <div class="oe_snippet_thumbnail ui-draggable-handle">
+                        <div class="oe_snippet_thumbnail_img" style="background-image: url(&quot;/website_tabs/static/src/img/thumbnail.png&quot;);"></div>
+                        <span class="oe_snippet_thumbnail_title">Panel</span>
+                    </div>
+
+
+                    <!-- Snippet Body -->
+                <section class="oe_snippet_body cst mt16 mb16">
+                <div class="panel-group" role="tablist" id="myCollapse1534411694110">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" data-toggle="collapse" data-parent="#myCollapse1534411694110" data-target="#myCollapseTab1534411694110">
+                    <h4 class="panel-title o_default_snippet_text">
+                            Odoo POS支援哪些硬體？
+                        </h4>
+                  </div>
+                  <div class="panel-collapse collapse" role="tabpanel" id="myCollapseTab1534411694110">
+                    <div class="panel-body">
+                      <p class="o_default_snippet_text"> Odoo的POS解決方案採用Web應用程序，他可以運行在任何設備上，透過簡單的設置後就可以開始運作。</p>
+                      <p class="o_default_snippet_text">odoo的POS解決方案可適用於任何類型的觸控設備，無論是多點觸控平板電腦(如iPad)，或無鍵電阻式觸摸屏終端(如一般POS機)。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" data-toggle="collapse" data-parent="#myCollapse1534411694110" data-target="#myCollapseTab1534411694112">
+                    <h4 class="panel-title o_default_snippet_text">它能離線工作嗎？</h4>
+                  </div>
+                  <div class="panel-collapse collapse" role="tabpanel" id="myCollapseTab1534411694112">
+                    <div class="panel-body">
+                      <p class="o_default_snippet_text">部署新商店只是一個網路連接：無需安裝，無需特定的硬體。它適用於任何的iPad，平板電腦，筆記型電腦或POS機。</p>
+                      <p class="o_default_snippet_text">雖然需要通過網路連接到啟動銷售點，它甚至會後完全斷開保持正常運轉。雖然需要網路連接後才能啟動POS，但即使在後續斷線後，它仍將可保持運行狀態。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" data-toggle="collapse" data-parent="#myCollapse1534411694110" data-target="#myCollapseTab1534411694113">
+                    <h4 class="panel-title o_default_snippet_text">我能用它來管理根據敏捷方法的專案嗎？</h4>
+                  </div>
+                  <div class="panel-collapse collapse" role="tabpanel" id="myCollapseTab1534411694113">
+                    <div class="panel-body">
+                      <p class="o_default_snippet_text">是</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+ 
+                </section>
+                </div>
+            </xpath>
+        </template>
+
+
+
+        <!-- Add tabs option -->
+        <template id="custom_snippet_tabs_options" inherit_id="website.snippet_options">
+            <xpath expr="." position="inside">
+                <div data-js="snippet_testimonial_options" data-snippet-option-id="custom_snippet_tabs" data-selector=".cst">
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="js_add" data-_add_new_tabs="true">增加區塊</a>
+                    </li>
+                    <li>
+                        <a href="#" class="js_remove" data-_remove_current_tabs="true">減少區塊</a>
+                    </li>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
